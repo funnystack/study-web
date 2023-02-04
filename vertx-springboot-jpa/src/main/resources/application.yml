@@ -1,0 +1,42 @@
+################### Vert.x Configuration ##########################
+vertx:
+  worker:
+    pool:
+      size: 60
+  springWorker:
+    instances: 30
+
+#hsqldb
+#jdbcUrl:  jdbc:hsqldb:mem:test?shutdown=true
+#driverClassName:  org.hsqldb.jdbcDriver
+#username: SA
+#password:
+#maximumPoolSize: 100
+################### DataSource Configuration ##########################
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/mall?useUnicode=true&characterEncoding=utf8&useSSL=true&allowMultiQueries=true&verifyServerCertificate=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+      maximum-pool-size: 100
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  redis:
+    host: 127.0.0.1
+    database: 0
+    password:
+    port: 6379
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: -1
+        min-idle: 0
+
+
+

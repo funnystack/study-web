@@ -1,0 +1,1 @@
+wrk -t10 -c100 -d30s -s wrk.lua http://localhost:10075/api/books

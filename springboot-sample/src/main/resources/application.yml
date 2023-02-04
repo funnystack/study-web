@@ -1,0 +1,10 @@
+# 运行环境配置
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: "@activatedProperties@"
