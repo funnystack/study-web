@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 
 /**
  * @author funnystack
@@ -88,7 +90,7 @@ public class LoginController {
         // 3、向资源服务器请求用户信息，携带access_token和tokenType
         String userUrl = "https://api.github.com/user";
         String userParam = "access_token=" + accessToken + "&token_type=" + tokenType;
-        
+
         // 申请资源
         String userResult = HttpClientUtils.sendGetRequest(userUrl, userParam);
 
@@ -163,6 +165,8 @@ public class LoginController {
         // 5、输出用户信息
         response.setContentType("text/html;charset=utf-8");
         response.getWriter().write(userInfo);
+
+
     }
 
     /**
