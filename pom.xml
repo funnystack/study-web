@@ -12,8 +12,8 @@
         <module>springboot-sample</module>
         <module>netty-sample</module>
         <module>alipay-sample</module>
-        <module>es-sample</module>
         <module>i18n-sample</module>
+        <module>cas-sample</module>
         <module>oauth-sample</module>
         <module>jwt-sample</module>
         <module>shiro-sample</module>
