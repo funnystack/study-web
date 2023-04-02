@@ -17,6 +17,7 @@
         <module>oauth-sample</module>
         <module>jwt-sample</module>
         <module>shiro-sample</module>
+        <module>spring-security-sample</module>
         <module>ws-sample</module>
     </modules>
     <packaging>pom</packaging>

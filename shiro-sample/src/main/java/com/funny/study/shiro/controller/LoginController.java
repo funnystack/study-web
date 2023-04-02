@@ -56,7 +56,7 @@ public class LoginController {
     }
 
     @RequiresRoles("admin")
-    @RequiresPermissions("create")
+    @RequiresPermissions("create1")
     @RequestMapping("/adminCreate")
     @ResponseBody
     public String adminCreate() {

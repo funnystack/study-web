@@ -1,4 +1,4 @@
-package com.funny.study.shiro;
+package com.funny.study.ss;
 
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@MapperScan("com.funny.study.shiro.mapper")
+@MapperScan("com.funny.study.ss.mapper")
 @EnableTransactionManagement
-public class ShiroApplication {
+public class SpringSecurityApplication {
 	@Bean
 	public PaginationInterceptor paginationInterceptor() {
 		return new PaginationInterceptor();
 	}
 	public static void main(String[] args) {
-		SpringApplication.run(ShiroApplication.class, args);
+		SpringApplication.run(SpringSecurityApplication.class, args);
 	}
 }
