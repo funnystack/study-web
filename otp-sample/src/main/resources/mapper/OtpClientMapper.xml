@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.funny.study.otp.dao.OtpClientMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.funny.study.otp.entity.OtpClientEntity">
+        <id column="id" property="id" />
+        <result column="created_stime" property="createdStime" />
+        <result column="modified_stime" property="modifiedStime" />
+        <result column="is_del" property="isDel" />
+        <result column="client_type" property="clientType" />
+        <result column="client_sn" property="clientSn" />
+        <result column="secret" property="secret" />
+        <result column="bind_user_id" property="bindUserId" />
+        <result column="bind_time" property="bindTime" />
+        <result column="ext_value" property="extValue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, created_stime, modified_stime, is_del, client_type, client_sn, secret, bind_user_id, bind_time, ext_value
+    </sql>
+
+</mapper>

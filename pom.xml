@@ -17,6 +17,7 @@
         <module>oauth-sample</module>
         <module>jwt-sample</module>
         <module>shiro-sample</module>
+        <module>otp-sample</module>
         <module>spring-security-sample</module>
         <module>ws-sample</module>
     </modules>
@@ -24,6 +25,8 @@
 
     <properties>
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
+        <dynamic-datasource-spring-boot-starter.version>3.2.0</dynamic-datasource-spring-boot-starter.version>
     </properties>
     <dependencyManagement>
         <dependencies>
